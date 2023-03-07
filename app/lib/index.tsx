@@ -26,15 +26,7 @@ const ExampleTinyFrontend: React.FC<ExampleTinyFrontendProps> = ({
           >
             tiny frontend
           </a>{" "}
-          🐰 , I was deployed from{" "}
-          <a
-            href="https://github.com/tiny-frontend/example-tiny-frontend"
-            target="_blank"
-            rel="noreferrer"
-          >
-            this git repository
-          </a>
-          . I&apos;m just a regular React component, but my implementation was
+          🐰. I&apos;m just a regular React component, but my implementation was
           loaded at runtime!
         </p>
         <p>
@@ -42,9 +34,7 @@ const ExampleTinyFrontend: React.FC<ExampleTinyFrontendProps> = ({
         </p>
       </div>
 
-      <Button onClick={() => setValue((value) => value + 1)}>
-        Press me Remix Europe!
-      </Button>
+      <Button onClick={() => setValue((value) => value + 1)}>Click me</Button>
     </div>
   );
 };
