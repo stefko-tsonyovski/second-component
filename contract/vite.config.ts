@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/main.ts",
-      name: "exampleTinyFrontendContract",
-      fileName: (format) => `example-tiny-frontend-contract.${format}.js`,
+      name: "secondComponent",
+      fileName: (format) => `second-component-contract.${format}.js`,
     },
     rollupOptions: {
       ...rollupExternals,

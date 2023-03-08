@@ -11,7 +11,7 @@ export default defineConfig({
     lib: {
       entry: "./lib/index.tsx",
       name: `tinyFrontendExports.${tinyFrontendName}`,
-      fileName: (format) => `example-tiny-frontend.${format}.js`,
+      fileName: (format) => `second-component.${format}.js`,
       formats: ["umd"],
     },
     rollupOptions: {
