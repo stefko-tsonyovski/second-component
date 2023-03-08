@@ -30,7 +30,7 @@ const ExampleTinyFrontend: React.FC<ExampleTinyFrontendProps> = ({
           loaded at runtime!
         </p>
         <p>
-          You pressed my button <strong>{value} times</strong>!
+          You pressed the button <strong>{value} times</strong>!
         </p>
       </div>
 
