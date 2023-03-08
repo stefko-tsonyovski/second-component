@@ -19,10 +19,8 @@ dotenv.config({
 await deployBundle({
   name: tinyFrontendName,
   contractVersion: version,
-  umdBundlePath: new URL(
-    "../dist/example-tiny-frontend.umd.js",
-    import.meta.url
-  ).pathname,
+  umdBundlePath: new URL("../dist/second-component.umd.js", import.meta.url)
+    .pathname,
   cssBundlePath: new URL("../dist/style.css", import.meta.url).pathname,
   cloudflare: {
     accountIdentifier: process.env.CF_ACCOUNT_ID,

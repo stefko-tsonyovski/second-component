@@ -3,6 +3,6 @@ export interface ExampleTinyFrontendProps {
   onCounterChange?: (counter: number) => void;
 }
 
-export type SomeOtherProps = {
+export type SecondComponentProps = {
   age: number;
-};
+} & ExampleTinyFrontendProps;

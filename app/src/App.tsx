@@ -1,5 +1,5 @@
-import ExampleTinyFrontend from "../lib";
+import SecondComponent from "../lib";
 
-const App = () => <ExampleTinyFrontend name={"Test"} />;
+const App = () => <SecondComponent name={"Test"} age={19} />;
 
 export default App;

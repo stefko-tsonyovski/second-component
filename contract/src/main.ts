@@ -8,12 +8,12 @@ import React from "react";
 import type exportedModule from "../../app/lib/index";
 import { tinyFrontendName, version } from "../package.json";
 
-export type ExampleTinyFrontendType = typeof exportedModule;
+export type SecondComponentType = typeof exportedModule;
 
 export const loadExampleTinyFrontendServer = async (
   tinyApiEndpoint: string
-): Promise<TinyFrontendServerResponse<ExampleTinyFrontendType>> =>
-  await loadTinyFrontendServer<ExampleTinyFrontendType>({
+): Promise<TinyFrontendServerResponse<SecondComponentType>> =>
+  await loadTinyFrontendServer<SecondComponentType>({
     tinyApiEndpoint,
     name: tinyFrontendName,
     contractVersion: version,
@@ -24,8 +24,8 @@ export const loadExampleTinyFrontendServer = async (
 
 export const loadExampleTinyFrontendClient = async (
   tinyApiEndpoint: string
-): Promise<ExampleTinyFrontendType> =>
-  await loadTinyFrontendClient<ExampleTinyFrontendType>({
+): Promise<SecondComponentType> =>
+  await loadTinyFrontendClient<SecondComponentType>({
     tinyApiEndpoint,
     name: tinyFrontendName,
     contractVersion: version,

@@ -1,7 +1,7 @@
 {
-  "name": "@tiny-frontend/example-tiny-frontend-contract",
-  "tinyFrontendName": "ExampleTinyFrontend",
-  "version": "0.0.5",
+  "name": "@tiny-frontend/second-component-contract",
+  "tinyFrontendName": "SecondComponent",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc --emitDeclarationOnly",
@@ -11,12 +11,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/example-tiny-frontend-contract.umd.js",
-  "module": "./dist/example-tiny-frontend-contract.es.js",
+  "main": "./dist/second-component-contract.umd.js",
+  "module": "./dist/second-component-contract.es.js",
   "exports": {
     ".": {
-      "import": "./dist/example-tiny-frontend-contract.es.js",
-      "require": "./dist/example-tiny-frontend-contract.umd.js"
+      "import": "./dist/second-component-contract.es.js",
+      "require": "./dist/second-component-contract.umd.js"
     }
   },
   "eslintConfig": {
